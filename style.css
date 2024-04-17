@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap');
+*{
+ font-family: "GFS Didot", serif;;
+}
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+    color: yellow; /* Cor da fonte amarela */
+}
+.apresenta {
+    color: yellow;
+    background-color: black;
+    height: 100vh; /* A seção ocupará 100% da altura da tela */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    text-align: center;
+}
+
+header, main, footer {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+main p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 2px solid yellow; /* Cor da borda amarela */
+    color: yellow; /* Cor do texto amarela */
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: yellow; /* Cor de fundo amarela ao passar o mouse */
+    color: black; /* Cor do texto preto ao passar o mouse */
+    transition: 0.6s;
+}
+
+footer {
+    position: block;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: yellow;
+    padding: 10px 0;
+    font-size: 0.8em;
+}
+
+.section {
+    padding: 50px;
+    color: white;
+    text-align: center;
+}
+
+.section1 {
+    background-color: black; 
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.container{
+    max-width: 40vw; 
+    padding: 20px; 
+    font-size: 2vh;
+    background-color: yellow;
+    color: black;
+    border-radius: 10px;
+}
+.imagem{
+    padding: 5vw;
+    width: 15vw;
+}
+.texto{
+    font-size: small;
+}
+
+.section3 {
+    background-color: black; 
+    color: yellow;
+}
+
+@media screen and (max-width: 600px) {
+    .section1 {
+        flex-direction: column; 
+    }
+
+    .container {
+        max-width: 80vw; 
+    }
+
+    .imagem {
+        width: 40vw;
+        order: 1; 
+        margin-top: 20px; 
+    }
+}
+
+@media screen and (min-width: 601px) {
+    .section1 {
+        justify-content: space-around; 
+    }
+
+    .container {
+        max-width: 40vw; 
+    }
+
+    .imagem {
+        width: 20vw;
+        order: 2;
+        margin-top: 0; 
+    }
+}
+
